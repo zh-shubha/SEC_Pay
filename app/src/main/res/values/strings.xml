@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SEC Pay</string>
+
+    <string name="s2"> #Go to your bKash Mobile Menu by dialing *247#->(1)\n\n
+#Choose “Payment”->(2)</string>
+
+    <string name="s3">#Enter the Merchant bKash Account Number you want to pay to->(3)\n\n
+#Enter the amount you want to pay->(4)</string>
+
+    <string name="s4">#Enter a reference* against your payment (you have to use your Reg No as reference)->(5)\n\n
+#Enter the Counter Number* (Counter No:1)->(6)</string>
+
+    <string name="s5">#Now enter your bKash Mobile Menu PIN to confirm->(7)\n\n
+        #Payment successful->(8)</string>
+
+    <string name="s6">If you have completed your payment by following above rules then put your Transaction ID below </string>
+
+    <string name="Terms_Conditions">01. If user puts wrong information during signup or makes mistake then it will be inconsistant with the database and will produce wrong result
+        \n\n02. If user makes a mistake during putting transaction ID\'s, then he/she may have to visit the office\n
+        \n03. Clerk can puts wrong payment information, in that case payment information will have be reseted\n
+        \n04. If you can not login, there is a chance the server is busy,try again a few minutes later\n
+        \n05. Please do not give your password to anyone else
+
+    </string>
+
+</resources>

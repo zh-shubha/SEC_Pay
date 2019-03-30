@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "282747680472",
+    "firebase_url": "https://myapplication2-942c9.firebaseio.com",
+    "project_id": "myapplication2-942c9",
+    "storage_bucket": "myapplication2-942c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282747680472:android:547d91c3bbcd0370",
+        "android_client_info": {
+          "package_name": "com.example.shubha.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282747680472-5jec45gdfk24ldica17fsjlsa1rf8f9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shubha.myapplication",
+            "certificate_hash": "b0c1f22c178c2acbfb22d452631ce4e5e3ccda90"
+          }
+        },
+        {
+          "client_id": "282747680472-hmfgtd6baa94p5iggd1d0hb5kv0b0rl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shubha.myapplication",
+            "certificate_hash": "890a13473b620b3fc7c99561f26ae7a29bf0c32a"
+          }
+        },
+        {
+          "client_id": "282747680472-ivmjib99l6v8n2qp93fs26g8212a7vqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb0ZG0UM0v51muc9dV671FCdUU5ulUWmU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282747680472-ivmjib99l6v8n2qp93fs26g8212a7vqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
