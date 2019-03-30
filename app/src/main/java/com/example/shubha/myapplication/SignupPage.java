@@ -146,4 +146,5 @@ public class SignupPage extends AppCompatActivity {
 
     public void Signup(View view) {
     }
+    //singup
 }
