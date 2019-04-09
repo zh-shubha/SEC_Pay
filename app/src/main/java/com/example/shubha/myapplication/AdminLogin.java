@@ -93,7 +93,6 @@ public class AdminLogin extends AppCompatActivity {
                 {
                     Toast.makeText(AdminLogin.this, "Empty Field", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
     }
