@@ -27,17 +27,21 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ProfilePage" />
         <activity android:name=".HowToPay" />
+        <activity android:name=".FailedList2" />
+        <activity android:name=".FailedList" />
+        <activity android:name=".PendingList" />
+        <activity android:name=".PendingList2" />
         <activity
             android:name=".AdminLogin"
             android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".AdminProfile"
             android:windowSoftInputMode="stateHidden" />
-
         <activity
             android:name=".Login"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Forgot"></activity>
+        <activity android:name=".Forgot" />
+        <activity android:name=".Checking"></activity>
     </application>
 
 </manifest>

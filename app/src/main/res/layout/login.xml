@@ -9,91 +9,85 @@
     style="@style/custom_theme"
     tools:context=".Login">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:background="@android:color/transparent"
-                android:focusable="true"
-                android:focusableInTouchMode="true">
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/Email"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="100dp"
-                android:hint="E-mail" />
-
-            <EditText
-                android:id="@+id/Password"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:baselineAligned="false"
-                android:inputType="textPassword"
-                android:hint="Password" />
-
-            <Button
-                android:id="@+id/button"
-                android:background="@drawable/custom_button"
-                android:layout_width="125dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:onClick="Login"
-                android:text="LOGIN"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/forgot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:onClick="Forgot"
-                android:text="Forgot Password? Click Here"
-                android:textStyle="bold"
-                android:textColor="#8080ff"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/Admin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="70dp"
-                android:onClick="Admin"
-                android:text="Are you an Admin?   Click Here"
-                android:textStyle="bold"
-                android:textColor="#065535"
-                android:textSize="20sp" />
-
-
-            <Button
-                android:id="@+id/button2"
-                android:background="@drawable/custom_button"
-                android:layout_width="300dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="70dp"
-                android:layout_marginBottom="40dp"
-                android:onClick="signup"
-                android:text="Create New Account"
-                android:textSize="17sp" />
-
-
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@android:color/transparent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
         </LinearLayout>
 
-    </ScrollView>
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:hint="E-mail" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            android:inputType="textPassword"
+            android:hint="Password" />
+
+        <Button
+            android:id="@+id/button"
+            android:background="@drawable/custom_button"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:onClick="Login"
+            android:text="LOGIN"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="Forgot"
+            android:text="Forgot Password? Click Here"
+            android:textStyle="bold"
+            android:textColor="#036992"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:onClick="Admin"
+            android:text="Are you an Admin?   Click Here"
+            android:textStyle="bold"
+            android:textColor="#065535"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:background="@drawable/custom_button"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:onClick="signup"
+            android:text="Create New Account"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

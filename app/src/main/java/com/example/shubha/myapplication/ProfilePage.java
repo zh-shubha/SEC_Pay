@@ -3,8 +3,10 @@ package com.example.shubha.myapplication;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -36,6 +38,7 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -182,6 +185,7 @@ public class ProfilePage extends AppCompatActivity {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(ProfilePage.this);
         alert.setTitle("Exiting App");
+        alert.setIcon(R.drawable.question_mark2);
         alert.setMessage("Are you sure you want to Close The App?");
         alert.setPositiveButton("YES", new DialogInterface.OnClickListener() {
             @Override
@@ -216,7 +220,7 @@ public class ProfilePage extends AppCompatActivity {
         finish();
         Intent intent=new Intent(this,Login.class);
         startActivity(intent);
-        Toast.makeText(ProfilePage.this, "Sign Out Successfull", Toast.LENGTH_SHORT).show();
+        Toast.makeText(ProfilePage.this, "Sign Out Successful", Toast.LENGTH_SHORT).show();
     }
 
     private void chooseImage() {
@@ -234,6 +238,14 @@ public class ProfilePage extends AppCompatActivity {
         {
             filePath = data.getData();
             Toast.makeText(ProfilePage.this, "Image Selected", Toast.LENGTH_SHORT).show();
+            try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
+                imageView.setImageBitmap(bitmap);
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 

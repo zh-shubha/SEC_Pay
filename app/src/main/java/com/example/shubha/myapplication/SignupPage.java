@@ -77,6 +77,7 @@ public class SignupPage extends AppCompatActivity {
                         if(pass1check.equals(pass2check)){
                             AlertDialog.Builder alert = new AlertDialog.Builder(SignupPage.this);
                             alert.setTitle("Creating New Account");
+                            alert.setIcon(R.drawable.question_mark2);
                             alert.setMessage("Are you sure you want to Create New Account?");
                             alert.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                                 @Override
@@ -127,7 +128,7 @@ public class SignupPage extends AppCompatActivity {
                             alert.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    Toast.makeText(SignupPage.this, "Cliccked NO", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(SignupPage.this, "Pressed NO", Toast.LENGTH_SHORT).show();
                                 }
                             });
                             alert.create().show();
@@ -136,6 +137,12 @@ public class SignupPage extends AppCompatActivity {
                             Toast.makeText(SignupPage.this, "Passwords didn't Match", Toast.LENGTH_SHORT).show();
                         }
                     }
+                    if(!TextUtils.isEmpty(namecheck) && !TextUtils.isEmpty(regcheck) && !TextUtils.isEmpty(deptcheck) &&
+                        !TextUtils.isEmpty(sessioncheck) && !TextUtils.isEmpty(emailcheck) && !TextUtils.isEmpty(pass1check) &&
+                        !TextUtils.isEmpty(pass2check) && !Cbox.isChecked())
+                    {
+                        Toast.makeText(SignupPage.this, "You Have to accept terms and conditions", Toast.LENGTH_SHORT).show();
+                    }
                     else {
                         Toast.makeText(SignupPage.this, "Empty Field", Toast.LENGTH_SHORT).show();
                     }
@@ -143,8 +150,4 @@ public class SignupPage extends AppCompatActivity {
         });
 
     }
-
-    public void Signup(View view) {
-    }
-    //singup
 }

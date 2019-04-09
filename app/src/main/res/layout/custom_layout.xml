@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:text="Name :"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/customName"
                 android:layout_marginStart="5dp"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:text="Name"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -42,15 +42,16 @@
                 android:layout_height="wrap_content"
                 android:text="Reg. No. :"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/customReg"
                 android:layout_marginStart="5dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Reg. No."
+                android:textIsSelectable="true"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -64,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="Trx. ID :"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/customTrx"
                 android:layout_marginStart="5dp"
@@ -72,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:text="Trx. ID"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -86,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:text="Money :"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/customMoney"
                 android:layout_marginStart="5dp"
@@ -94,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:text="Money"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -109,7 +110,7 @@
                 android:layout_height="wrap_content"
                 android:text="Date Sent :"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/customDate"
                 android:layout_marginStart="5dp"
@@ -117,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:text="Date Sent"
                 android:textColor="#000000"
-                android:textSize="20dp"/>
+                android:textSize="20sp"/>
 
         </LinearLayout>
 

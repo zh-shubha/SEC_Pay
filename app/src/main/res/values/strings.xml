@@ -23,4 +23,21 @@
 
     </string>
 
+    <string-array name="Depts">
+        <item>CSE</item>
+        <item>EEE</item>
+        <item>CIVIL</item>
+    </string-array>
+
+    <string-array name="Sessions">
+        <item>2013-14</item>
+        <item>2014-15</item>
+        <item>2015-16</item>
+        <item>2016-17</item>
+        <item>2017-18</item>
+        <item>2018-19</item>
+        <item>2019-20</item>
+    </string-array>
+
+
 </resources>

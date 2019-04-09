@@ -32,7 +32,7 @@ public class HowToPay extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_how_to_pay);
-        setTitle("Paayment Method");
+        setTitle("Payment Method");
 
         mAuth = FirebaseAuth.getInstance();
         Database = FirebaseDatabase.getInstance();
@@ -54,6 +54,7 @@ public class HowToPay extends AppCompatActivity {
         {
             AlertDialog.Builder alert = new AlertDialog.Builder(HowToPay.this);
             alert.setTitle("Sending Trx. ID");
+            alert.setIcon(R.drawable.question_mark2);
             alert.setMessage("Are you sure this the Transaction ID?");
             alert.setPositiveButton("YES", new DialogInterface.OnClickListener() {
                 @Override
@@ -73,7 +74,7 @@ public class HowToPay extends AppCompatActivity {
             alert.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Toast.makeText(HowToPay.this, "Empty Field", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(HowToPay.this, "Pressed No", Toast.LENGTH_SHORT).show();
                 }
             });
             alert.create().show();
@@ -85,9 +86,10 @@ public class HowToPay extends AppCompatActivity {
 
     }
 
-    public void GoBack(View view) {
+    public void onBackPressed(){
 
         Intent intent=new Intent(this,ProfilePage.class);
         startActivity(intent);
+        finish();
     }
 }

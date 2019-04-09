@@ -3,7 +3,13 @@ package com.example.shubha.myapplication;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.os.Handler;
+import android.view.MenuInflater;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,7 +32,6 @@ public class PendingList2 extends AppCompatActivity {
         setTitle("Pending List");
         listview=(ListView)findViewById(R.id.listview);
         final ArrayList<CustomClass> arrayList = new ArrayList<>();
-
         CustomAdaptor adaptor = new CustomAdaptor(this,arrayList);
         listview.setAdapter(adaptor);
 
@@ -56,5 +61,22 @@ public class PendingList2 extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.refreshmenu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.RefreshID)
+        {
+            Toast.makeText(PendingList2.this,"Refreshed",Toast.LENGTH_SHORT).show();
+            recreate();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
