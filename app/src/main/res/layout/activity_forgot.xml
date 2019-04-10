@@ -35,7 +35,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:onClick="ForgotPasword"
-        android:text="LOGIN"
+        android:text="SEND"
         android:textSize="18sp" />
 
 </LinearLayout>
